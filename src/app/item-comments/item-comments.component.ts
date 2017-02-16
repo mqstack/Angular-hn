@@ -26,7 +26,7 @@ export class ItemCommentsComponent implements OnInit {
             data => {
               this.item = data;
             },
-            error => console.log('Could not load item' + itemID));
+            error => console.log('Could not load item' + itemId));
       });
   }
 

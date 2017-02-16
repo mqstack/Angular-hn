@@ -28,7 +28,7 @@ export class HackernewsApiService {
             .map(response => response.json());
     }
     
-    fetchComments(id: string): Observable<any>{
+    fetchComments(id: number): Observable<any>{
         return this.http.get(`${this.baseUrl2}/item/${id}`)
             .map(response => response.json());
     }

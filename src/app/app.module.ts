@@ -13,7 +13,10 @@ import { ItemComponent } from './item/item.component';
 import {HackernewsApiService} from './hackernews-api.service';
 import { DomainPipe } from './domain.pipe';
 import { ItemCommentsComponent } from './item-comments/item-comments.component';
-import { routing } from './app.routes'
+import { routing } from './app.routes';
+import { CommentTreeComponent } from './comment-tree/comment-tree.component';
+import { CommentComponent } from './comment/comment.component';
+import { UserComponent } from './user/user.component'
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { routing } from './app.routes'
     FooterComponent,
     ItemComponent,
     DomainPipe,
-    ItemCommentsComponent
+    ItemCommentsComponent,
+    CommentTreeComponent,
+    CommentComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,

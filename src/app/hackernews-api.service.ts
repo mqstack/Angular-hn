@@ -27,4 +27,14 @@ export class HackernewsApiService {
         return this.http.get(`${this.baseUrl2}/${stroyType}?page=${page}`)
             .map(response => response.json());
     }
+    
+    fetchComments(id: string): Observable<any>{
+        return this.http.get(`${this.baseUrl2}/item/${id}`)
+            .map(response => response.json());
+    }
+    
+    fetchUser(id: string):Observable<any>{
+        return this.http.get(`${this.baseUrl2}/user/${id}`)
+            .map(response => response.json());
+    }
 }
